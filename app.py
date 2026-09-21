@@ -16,8 +16,8 @@ st.set_page_config(
 # ============================================================
 @st.cache_resource
 def load_model():
-    model = joblib.load("model_rambutan(1).pkl")
-    fitur = joblib.load("fitur_rambutan(1).pkl")
+    model = joblib.load("model_rambutan.pkl")
+    fitur = joblib.load("fitur_rambutan.pkl")
     return model, fitur
 
 model, fitur = load_model()
